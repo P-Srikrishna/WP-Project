@@ -1,5 +1,5 @@
 # WP-Project
-WP-Project to be completed and submitted by tomorrow!
+
 IMPORTANT!
 Dont make changes in the homepage or any other things in the folder
 only add your own pages to the folder and pictures or whichever media you need
