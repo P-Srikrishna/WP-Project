@@ -5,23 +5,23 @@ def homepage(request):
     return render(request, "Homepage.html")
 
 def aboutus(request):
-    return HttpResponse("This page is About Us")
+    return render(request, "AboutUs.html")
 
 def registration(request):
-    return HttpResponse("This page is for you to register")
+    return render(request, "registration.html")
 
 def consultation(request):
-    return HttpResponse("This is our Consultation page")
+    return render(request, "Services-info-Consultations.html")
 
 def counselling(request):
-    return HttpResponse("This is our wise Counsel page")
+    return render(request, "Services-info-Counselling.html")
 
 def nursing(request):
-    return HttpResponse("This page is for our nurses")
+    return render(request, "Services-info-Nursing.html")
 
 def covid(request):
-    return HttpResponse("we're ready to help you, please help youself")
+    return render(request, "Services-info-COVID.html")
 
 def elder_care(request):
-    return HttpResponse("This page is for our elders along with our care")
+    return render(request, "Services-info-ElderCare.html")
 
