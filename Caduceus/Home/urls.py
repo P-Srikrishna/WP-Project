@@ -19,4 +19,11 @@ from Home import views
 
 urlpatterns = [
     path('', views.homepage, name="home"),
+    path('about', views.aboutus, name="About Us"),
+    path('register', views.registration, name="Registration"),
+    path('consult', views.consultation, name="Consultation"),
+    path('counsel', views.counselling, name="Counselling"),
+    path('nurse', views.nursing, name="Nursing"),
+    path('eldercare', views.elder_care, name="Elder-Care"),
+    path('covid', views.covid, name="COVID"),
 ]
