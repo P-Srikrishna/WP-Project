@@ -15,10 +15,11 @@ Including another URLconf
 """
 
 from django.contrib import admin
+from django.urls import path, include
+
 admin.site.site_header = "Caduceus Admin"
 admin.site.site_title = "Caduceus Admin Portal"
-admin.site.index_title = "Welcome to Caduceus Researcher Portal"
-from django.urls import path, include
+admin.site.index_title = "Welcome to Caduceus"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
