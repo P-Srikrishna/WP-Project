@@ -119,6 +119,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Added Manually
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
