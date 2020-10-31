@@ -1,245 +1,67 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registration Form</title>
-	<style type="text/css">
 
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		body{
-			background-image: url(medicine.jpg);
-			background-position: center;
-			background-size: cover;
-			font-family: sans-serif;
-			margin-top: 40px;
-		}
-		.regform{
-			width: 800px;
-			background-color: rgb(0,0,0,0.6);
-			margin: auto;
-			color: #FFFFFF;
-			padding: 10px 0px 10px 0px;
-			text-align: center;
-			border-radius: 15px 15px 0px 0px;
-		}
-		.main{
-			background-color: rgb(0,0,0,0.5);
-			width: 800px;
-			margin: auto;
-		}
-		form{
-			padding: 10px;
-		}
-		#name{
-			width: 100%
-			height:100px;
-		}
-		.name{
-			margin-left: 25px;
-			margin-top: 30px;
-			width: 125px;
-			color: white;
-			font-size: 18px;
-			font-weight: 700;
-		}
-		.firstname{
-			position: relative;
-			left: 200px;
-			top: -37px;
-			line-height: 40px;
-			border-radius: 6px;
-			padding:0 22px;
-			font-size: 16px; 
-		}
-		.lastname{
-			position: relative;
-			left: 417px;
-			top: -80px;
-			line-height: 40px;
-			border-radius: 6px;
-			padding: 0 22px;
-			font-size: 16px;
-			color: #555;
-		}
-		.firstlabel{
-			position: relative;
-			color: #E5E5E5;
-			text-transform: capitalize;
-			font-size: 14px;
-			left: 203px;
-			top: -45px;
-		}
-		.lastlabel{
-			position: relative;
-			color: #E5E5E5;
-			text-transform: capitalize;
-			font-size: 14px;
-			left: 175px;
-			top: -45px;
-		}
-		.profession{
-			position: relative;
-			left: 200px;
-			top: -37px;
-			line-height: 40px;
-			width: 300px;
-			border-radius: 6px;
-			padding: 0 22px;
-			font-size: 16px;
-			color: #555;
-		}
-		.email{
-			position: relative;
-			left: 200px;
-			top: -37px;
-			line-height: 40px;
-			width: 300px;
-			border-radius: 6px;
-			padding: 0 22px;
-			font-size: 16px;
-			color: #555;
-		}
-		.code{
-			position: relative;
-			left: 200px;
-			top: -37px;
-			line-height: 40px;
-			width: 95px;
-			border-radius: 6px;
-			padding: 0 22px;
-			font-size: 16px;
-			color: #555;
-		}
-		.number{
-			position: relative;
-			left: 200px;
-			top: -37px;
-			line-height: 40px;
-			width: 255px;
-			border-radius: 6px;
-			padding: 0 22px;
-			font-size: 16px;
-			color: #555;
-		}
-		.area-code
-		{
-			position: relative;
-			color: #E5E5E5;
-			text-transform: capitalize;
-			font-size: 16px;
-			left: 54px;
-			top: -4px;	
-		}
-		.phone-number
-		{
-			position: relative;
-			color: #E5E5E5;
-			text-transform: capitalize;
-			font-size: 16px;
-			left: -100px;
-			top: -2px;
-		}
-		.option{
-			position: relative;
-			left: 200px;
-			top: -37px;
-			line-height: 40px;
-			width: 255px;
-			height: 40px;
-			border-radius: 6px;
-			padding: 0 22px;
-			font-size: 16px;
-			color: #555;
-			outline: none;
-			overflow: hidden;
-		}
-		.option option{
-			font-size: 20px;
-		}
-		#gender{
-			margin-left: 25px;
-			color: white;
-			font-size: 18px;
-		}
-		.radio{
-			display: inline-block;
-			padding-right: 70px;
-			font-size: 25px;
-			margin-left: 25px;
-			margin-top: 15px;
-			color: white;
-		}
-		.radio input{
-			width: 20px;
-			height: 20px;
-			border-radius: 50%;
-			cursor: pointer;
-			outline: none;
-		}
-		button{
-			background: #3BAF9F;
-			display: block;
-			margin: 20px 0px 0px 20px;
-			text-align: center;
-			border-radius: 12px;
-			border:2px solid #366473;
-			padding: 14px 110px;
-			outline: none;
-			color: white;
-			cursor: pointer;
-			transition: 0.25px;
-		}
-		button:hover{
-			background-color:#5390F5; 
-		}
-	</style>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Caduceus</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title>Registration</title>
 
 </head>
 <body>
-	<div class="regform"><h1>Registration Form</h1></div>
-	<div class="main">
 	<form>
-		<div id="name">
-			<h2 class="name">Name</h2>
-			<input class="firstname" type="text" name="first_name"><br>
-			<label class="firstlabel">First Name</label>
-			<input class="lastname" type="text" name="last_name">
-			<label class="lastlabel">Last Name</label>
-		</div>
-		<h2 class="name">Profession</h2>
-		<input class="profession" type="text" name="profession">
-		<h2 class="name">Email</h2>
-		<input class="email" type="text" name="email">
-		<h2 class="name">Phone</h2>
-		<input class="code" type="text" name="area_code">
-		<label class="area-code">Area Code</label>
-		<input class="number" type="text" name="phone">
-		<label class="phone-number">Phone Number</label>
-		<h2 class="name">Service</h2>
-		<select class="option" name="Service">
-			<option disabled="disabled" selected="selected">--Choose Option</option>
-			<option>Nursing</option>
-			<option>Doctor Counseling</option>
-			<option>Doctor Consultations</option>
-			<option>Elder Care</option>
-			<option>COVID Care</option>
-			<option>Home Isolation</option>
-		</select>
-
-		<h2 id="gender">Gender</h2>
-		<label class="radio">
-		<input class="radio-one" type="radio" id="male" name="gender" value="male">
-		<label for="male">Male</label><br>
-	</label>
-	<label class="radio">
-		<input class="radio-two" type="radio" id="female" name="gender" value="female">
-		<label for="female">Female</label><br>
-	</label>
-
-		<button type="submit">Register</button>
-	</form>
-</div>
-</body>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign up</button>
+</form>
+	</body>
 </html>
