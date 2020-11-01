@@ -27,5 +27,6 @@ urlpatterns = [
     path('nurse', views.nursing, name="nursing"),
     path('eldercare', views.elder_care, name="elder_care"),
     path('covid', views.covid, name="covid"),
-    url(r'map', views.map, name="map")
+    path('map', views.map, name="map")
+
 ]
