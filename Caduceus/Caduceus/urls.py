@@ -15,7 +15,8 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from django.conf.urls import include
 
 admin.site.site_header = "Caduceus Admin"
 admin.site.site_title = "Caduceus Admin Portal"
