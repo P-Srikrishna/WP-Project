@@ -3,16 +3,21 @@
 Map
 {% endblock title %}
 
+
 {% block body %}
 
-
-<div id='map' style='width: 1200px; height: 500px; margin: auto;'></div>
+<div id='map' style='width: 1000px; height: 500px; margin: auto;'></div>
 <script>
     mapboxgl.accessToken = 'pk.eyJ1Ijoic2lhY2hlbiIsImEiOiJja2d6aXN1ZzAwczYwMnJwYzJnajI3NnpjIn0.Db9oVRwN_bkBwkDIAOmL8g';
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11'
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [72.8324, 19.1116],
+        zoom: 7
     });
+    var Mumbai = new mapboxgl.Marker()
+        .setLngLat([72.8324, 19.1116])
+        .addTo(map);
 </script>
 
 
