@@ -23,56 +23,104 @@
     <img src="/static/register.jpg" class="card-img" alt="...">
   </div>
 
-  <form style="margin-left: 1em; margin-top: 1em;">
+  <form style="margin-left: 1em; margin-top: 1em;" class="needs-validation" novalidate>
     <div class="form-group">
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">Email</label>
-        <input type="email" class="form-control" id="inputEmail4">
+      <div class="col-md-6 mb-3">
+        <label for="registerName1">First name</label>
+        <input type="text" class="form-control" id="registerName1" value="Srikrishna" required>
+        <div class="invalid-feedback">
+          Please let us know you better.
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="registerName2">Last name</label>
+        <input type="text" class="form-control" id="registerName2" value="Polthel" required>
+        <div class="invalid-feedback">
+          Please let us know you better.
+        </div>
       </div>
       <div class="form-group col-md-6">
-        <label for="inputPassword4">Password</label>
-        <input type="password" class="form-control" id="inputPassword4">
+        <label for="registerEmail">Email</label>
+        <input type="email" class="form-control" id="registerEmail" required>
+        <div class="invalid-feedback">
+          Please enter a valid e-mail.
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="registerPassword">Password</label>
+        <input type="password" class="form-control" id="registerPassword" required>
+        <div class="invalid-feedback">
+          Please enter a strong password.
+        </div>
       </div>
     </div>
     <div class="form-group col-md-6 float-left">
-      <label for="inputAddress">Address</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      <label for="registerAddress">Address</label>
+      <input type="text" class="form-control" id="registerAddress" placeholder="1234 Main St">
     </div>
     <div class="form-group col-md-6">
-      <label for="inputAddress2">Address 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      <label for="registerPhone">Phone Number</label>
+      <input type="number" class="form-control" id="registerPhone" required>
+      <div class="invalid-feedback">
+        Please help us reach to you.
+      </div>
     </div>
     <div class="form-group">
       <div class="form-group col-md-3">
         <label for="inputState">City</label>
-        <select id="inputState" class="form-control">
-          <option selected>Choose...</option>
-          <option></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
+        <select id="inputState" class="form-control" required>
+          <option selected disabled value="">Choose a city</option>
+          <option value="">Bangalore</option>
+          <option value="">Bhopal</option>
+          <option value="">Chandigarh</option>
+          <option value="">Chennai</option>
+          <option value="">Delhi</option>
+          <option value="">Dispur</option>
+          <option value="">Hyderabad</option>
+          <option value="">Jaipur</option>
+          <option value="">Kolkata</option>
+          <option value="">Lucknow</option>
+          <option value="">Ludhiana</option>
+          <option value="">Mumbai</option>
+          <option value="">Trichy</option>
+          <option value="">Vadodara</option>
         </select>
+        <div class="invalid-feedback">
+          Please enter your City.
+        </div>
       </div>
-      <div class="form-group col-md-2">
-        <label for="inputZip">Zip</label>
-        <input type="text" class="form-control" id="inputZip">
+      <div class="form-row" style="margin-left: 1em;">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="bookCheck" required>
+          <label class="form-check-label" for="bookCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            Please agree before submitting.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="form-row" style="margin-left: 1em;">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Agree to terms and conditions
-        </label>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary" style="margin-left: 1em;">Sign up</button>
+      <button type="submit" class="btn btn-primary" style="margin-left: 1em;">Sign up</button>
+      <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          'use strict';
+          window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+              form.addEventListener('submit', function (event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+      </script>
   </form>
 </body>
 
