@@ -25,3 +25,6 @@ def covid(request):
 def elder_care(request):
     return render(request, "Services-info-ElderCare.html")
 
+def map(request):
+    return render(request, "map.html", {})
+
