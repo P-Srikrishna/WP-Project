@@ -22,7 +22,7 @@
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-secondary" style="background-color: #e3f2fd;">
         <img class="float-left" src="/static/Caduceus.png" alt="Caduceus" height="50">
-        <a class="navbar-brand" href="#" target="_self">Caduceus</a>
+        <a class="navbar-brand" href="{% url 'homepage' %}" target="_self">Caduceus</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,17 +36,17 @@
                         Our Services
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Consultation</a>
-                        <a class="dropdown-item" href="#">Counselling</a>
-                        <a class="dropdown-item" href="#">Elder Care</a>
-                        <a class="dropdown-item" href="#">Nursing</a>
+                        <a class="dropdown-item" href="{% url 'consultation' %}">Consultation</a>
+                        <a class="dropdown-item" href="{% url 'counselling' %}">Counselling</a>
+                        <a class="dropdown-item" href="{% url 'elder_care' %}">Elder Care</a>
+                        <a class="dropdown-item" href="{% url 'nursing' %}">Nursing</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">COVID testing</a>
-                        <a class="dropdown-item" href="#">Home Isolation management</a>
+                        <a class="dropdown-item" href="{% url 'covid' %}">COVID testing</a>
+                        <a class="dropdown-item" href="{% url 'covid' %}">Home Isolation management</a>
                     </div>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">About us<span class="sr-only"></span></a>
+                    <a class="nav-link" href="{% url 'aboutus'%}">About us<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Blogs<span class="sr-only"></span></a>

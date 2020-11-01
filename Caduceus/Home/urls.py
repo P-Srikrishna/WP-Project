@@ -18,12 +18,12 @@ from django.urls import path
 from Home import views
 
 urlpatterns = [
-    path('', views.homepage, name="home"),
-    path('about', views.aboutus, name="About Us"),
-    path('register', views.registration, name="Registration"),
-    path('consult', views.consultation, name="Consultation"),
-    path('counsel', views.counselling, name="Counselling"),
-    path('nurse', views.nursing, name="Nursing"),
-    path('eldercare', views.elder_care, name="Elder-Care"),
-    path('covid', views.covid, name="COVID"),
+    path('', views.homepage, name="homepage"),
+    path('about', views.aboutus, name="aboutus"),
+    path('register', views.registration, name="registration"),
+    path('consult', views.consultation, name="consultation"),
+    path('counsel', views.counselling, name="counselling"),
+    path('nurse', views.nursing, name="nursing"),
+    path('eldercare', views.elder_care, name="elder_care"),
+    path('covid', views.covid, name="covid"),
 ]

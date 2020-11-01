@@ -34,7 +34,7 @@ Home
                 </div>
             </div>
             <div class="/static/carousel-item">
-                <img src="doctor.jpg" class="d-block w-100" alt="doctor">
+                <img src="/static/doctor.jpg" class="d-block w-100" alt="doctor">
                 <div class="carousel-caption text-white d-none d-md-block">
                     <h2>Service for Welfare</h2>
                     <p>We provide for your health today for a happier tomorrow</p>
@@ -67,7 +67,7 @@ Home
                     <p class="card-text">Why wait to see a doctor, when there’s a doctor waiting to see you? The next
                         time you or a loved one needs to consult with a doctor, have the doctor visit you. At home. At
                         your convenience. To book an appointment with a doctor, begin here.</p>
-                    <a href="#" class="btn btn-primary">ABOUT</a>
+                    <a href="{% url 'consultation' %}" class="btn btn-primary">ABOUT</a>
                 </div>
             </div>
 
@@ -80,7 +80,7 @@ Home
                     <p class="card-text">With the progression of society, people have started realizing the importance
                         of mental well being and the need for counseling. We offer the a highly appreciated counseling
                         service that has brought respite to many disturbed individuals.</p>
-                    <a href="#" class="btn btn-primary">ABOUT</a>
+                    <a href="{% url 'counselling' %}" class="btn btn-primary">ABOUT</a>
                 </div>
             </div>
 
@@ -93,7 +93,7 @@ Home
                     <p class="card-text">With all the work loads on our heads we've been worrying even more of our
                         parents back home whom we have been unable to take care of. Its time we helped you with that,
                         Cadeuces offers our best trained professionals to care for your loved one like you would.</p>
-                    <a href="#" class="btn btn-primary">ABOUT</a>
+                    <a href="{% url 'elder_care' %}" class="btn btn-primary">ABOUT</a>
                 </div>
             </div>
 
@@ -106,7 +106,7 @@ Home
                     <p class="card-text">Looking for post-surgical care, Elderly care, Urinary catheterization care,
                         Wound care, Injections, IV infusions, Vaccination or other nursing assistance for Cancer
                         treatment? You have come to the right place!</p>
-                    <a href="#" class="btn btn-primary">ABOUT</a>
+                    <a href="{% url 'nursing' %}" class="btn btn-primary">ABOUT</a>
                 </div>
             </div>
         </div>
@@ -127,7 +127,7 @@ Home
                         Indian Council of Medical Research (ICMR) which recommends Home Isolation for both asymptomatic
                         & mildly symptomatic COVID-19 patients</p>
 
-                    <a href="#" class="btn btn-primary align-bottom">KNOW MORE
+                    <a href="{% url 'covid' %}" class="btn btn-primary align-bottom">KNOW MORE
                     </a>
                     </span>
                 </div>
@@ -139,7 +139,7 @@ Home
                 <div class="card-img-overlay">
                     <h5 class="card-text text-black">COVID testing</h5>
                     <p class="card-text">Get tested for COVID at the safety of your home!</p>
-                    <a href="#" class="btn btn-primary align-bottom">KNOW MORE
+                    <a href="{% url 'covid' %}" class="btn btn-primary align-bottom">KNOW MORE
                     </a>
                     </span>
                 </div>
