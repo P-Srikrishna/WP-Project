@@ -6,7 +6,7 @@ Map
 
 {% block body %}
 
-<div id='map' style='width: 1000px; height: 500px; margin: auto;'></div>
+<div id='map' style='width: 700px; height: 500px; margin: auto; margin-right: 1em;'>
 <script>
     mapboxgl.accessToken = 'pk.eyJ1Ijoic2lhY2hlbiIsImEiOiJja2d6aXN1ZzAwczYwMnJwYzJnajI3NnpjIn0.Db9oVRwN_bkBwkDIAOmL8g';
     var map = new mapboxgl.Map({
@@ -19,6 +19,6 @@ Map
         .setLngLat([72.8324, 19.1116])
         .addTo(map);
 </script>
-
+</div>
 
 {% endblock body %}
