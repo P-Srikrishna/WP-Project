@@ -8,32 +8,33 @@ Register
     <img src="/static/register.jpg" class="card-img" alt="...">
   </div>
 
-  <form style="margin-left: 1em; margin-top: 1em;" class="needs-validation" novalidate>
+  <form style="margin-left: 1em; margin-top: 1em;" method="POST" class="needs-validation" novalidate>
+    {% csrf_token %}
     <div class="form-group">
       <div class="col-md-6 mb-3">
         <label for="registerName1">First name</label>
-        <input type="text" class="form-control" id="registerName1" value="Srikrishna" required>
+        <input type="text" class="form-control" id="registerName1" name="FirstName" value="Srikrishna" required>
         <div class="invalid-feedback">
           Please let us know you better.
         </div>
       </div>
       <div class="col-md-6 mb-3">
         <label for="registerName2">Last name</label>
-        <input type="text" class="form-control" id="registerName2" value="Polthel" required>
+        <input type="text" class="form-control" id="registerName2" name="LastName" value="Polthel" required>
         <div class="invalid-feedback">
           Please let us know you better.
         </div>
       </div>
       <div class="form-group col-md-6">
         <label for="registerEmail">Email</label>
-        <input type="email" class="form-control" id="registerEmail" required>
+        <input type="email" class="form-control" id="registerEmail" name="EmailId" required>
         <div class="invalid-feedback">
           Please enter a valid e-mail.
         </div>
       </div>
       <div class="form-group col-md-6">
         <label for="registerPassword">Password</label>
-        <input type="password" class="form-control" id="registerPassword" required>
+        <input type="password" class="form-control" name="Password" id="registerPassword" required>
         <div class="invalid-feedback">
           Please enter a strong password.
         </div>
@@ -41,11 +42,11 @@ Register
     </div>
     <div class="form-group col-md-6">
       <label for="registerAddress">Address</label>
-      <input type="text" class="form-control" id="registerAddress">
+      <input type="text" class="form-control" name="Address" id="registerAddress">
     </div>
     <div class="form-group col-md-6">
       <label for="registerPhone">Phone Number</label>
-      <input type="number" class="form-control" id="registerPhone" required>
+      <input type="phone" class="form-control" name="Phone" id="registerPhone"  required placeholder="Enter phone number" >
       <div class="invalid-feedback">
         Please help us reach to you.
       </div>
