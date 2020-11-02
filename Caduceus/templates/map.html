@@ -11,7 +11,7 @@ Map
         display: block;
         position: relative;
         margin: 0px auto;
-        width: 50%;
+        width: 40%;
         height: 40px;
         padding: 10px;
         border: none;
@@ -22,8 +22,22 @@ Map
         background: #ee8a65;
     }
 </style>
-<button id="fly" style='margin-right: 1em;'>Fly</button>
-<div id='map' style='width: 700px; height: 500px; margin: auto; margin-right: 1em;'>
+
+<div>
+    <div class="card border-dark mb-3" style="max-width: 100rem;">
+
+        <div class="card-body text-dark">
+          <h5 class="card-title" style="font-size: 40px;">We Are Located At</h5>
+         <ul><li> <p class="card-text" style="font-size: 20px;">2E,madhugandha society,Bamanwada,chakala,cigarette factory,Andheri(E),mumbai-4000099</p></li>
+        <li><p class="card-text" style="font-size: 20px;">401D,Oberoi Splendor,JVLR,opp majas depot,JVLR,Jogeshwari(E),mumbai-400060</p></li>
+        <li><p class="card-text" style="font-size: 20px;">10A,Sarvodaya society,Chakala,Cigarette factory,Andheri(E),mumbai-4000090</p></li></ul>
+        </div>
+      </div>
+</div>
+<div>
+  <button id="fly">Fly</button>
+<div id='map'  style="width: 1000px; height: 500px;margin: auto;">
+    
     <script>
         mapboxgl.accessToken = 'pk.eyJ1Ijoic2lhY2hlbiIsImEiOiJja2d6aXN1ZzAwczYwMnJwYzJnajI3NnpjIn0.Db9oVRwN_bkBwkDIAOmL8g';
         var map = new mapboxgl.Map({
@@ -79,6 +93,7 @@ Map
         });
 
     </script>
+</div>
 </div>
 
 {% endblock body %}
