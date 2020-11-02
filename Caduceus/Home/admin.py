@@ -1,6 +1,6 @@
 from django.contrib import admin
-from Home.models import registration
+from Home.models import Registration1
 
 # Register your models here.
 
-admin.site.register(registration)
+admin.site.register(Registration1)
