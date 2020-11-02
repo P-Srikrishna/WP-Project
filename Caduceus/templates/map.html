@@ -6,19 +6,79 @@ Map
 
 {% block body %}
 
-<div id='map' style='width: 1000px; height: 500px; margin: auto;'></div>
-<script>
-    mapboxgl.accessToken = 'pk.eyJ1Ijoic2lhY2hlbiIsImEiOiJja2d6aXN1ZzAwczYwMnJwYzJnajI3NnpjIn0.Db9oVRwN_bkBwkDIAOmL8g';
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [72.8324, 19.1116],
-        zoom: 7
-    });
-    var Mumbai = new mapboxgl.Marker()
-        .setLngLat([72.8324, 19.1116])
-        .addTo(map);
-</script>
+<style>
+    #fly {
+        display: block;
+        position: relative;
+        margin: 0px auto;
+        width: 50%;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        font-size: 12px;
+        text-align: center;
+        color: #fff;
+        background: #ee8a65;
+    }
+</style>
+<button id="fly" style='margin-right: 1em;'>Fly</button>
+<div id='map' style='width: 700px; height: 500px; margin: auto; margin-right: 1em;'>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2lhY2hlbiIsImEiOiJja2d6aXN1ZzAwczYwMnJwYzJnajI3NnpjIn0.Db9oVRwN_bkBwkDIAOmL8g';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [72.8324, 19.1116],
+            zoom: 7
+        });
+        var Mumbai = new mapboxgl.Marker()
+            .setLngLat([72.8324, 19.1116])
+            .addTo(map);
 
+        var Delhi = new mapboxgl.Marker()
+            .setLngLat([77.2316, 28.5738])
+            .addTo(map);
+
+        var Chennai = new mapboxgl.Marker()
+            .setLngLat([80.2239, 12.9799])
+            .addTo(map);
+
+        var Bengaluru = new mapboxgl.Marker()
+            .setLngLat([77.5957, 12.9514])
+            .addTo(map);
+
+        document.getElementById('fly').addEventListener('click', function () {
+
+            map.flyTo({
+                center: [77.2316, 28.5738],
+                essential: true
+            });
+
+            document.getElementById('fly').addEventListener('click', function () {
+
+                map.flyTo({
+                    center: [80.2239, 12.9799],
+                    essential: true
+                });
+                document.getElementById('fly').addEventListener('click', function () {
+
+                    map.flyTo({
+                        center: [77.5957,12.9514],
+                        essential: true
+                    });
+                    document.getElementById('fly').addEventListener('click', function () {
+
+                        map.flyTo({
+                            center: [72.8324, 19.1116],
+                            essential: true
+                        });
+                    });
+                });
+            });
+        });
+
+    </script>
+</div>
 
 {% endblock body %}
