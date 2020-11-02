@@ -12,22 +12,22 @@ Register
     {% csrf_token %}
     <div class="form-group">
       <div class="col-md-6 mb-3">
-        <label for="registerName1">First name</label>
-        <input type="text" class="form-control" id="registerName1" name="FirstName" value="Srikrishna" required>
+        <label for="FirstName">First name</label>
+        <input type="text" class="form-control" id="FirstName" name="FirstName"  required>
         <div class="invalid-feedback">
           Please let us know you better.
         </div>
       </div>
       <div class="col-md-6 mb-3">
         <label for="registerName2">Last name</label>
-        <input type="text" class="form-control" id="registerName2" name="LastName" value="Polthel" required>
+        <input type="text" class="form-control" id="registerName2" name="LastName" required>
         <div class="invalid-feedback">
           Please let us know you better.
         </div>
       </div>
       <div class="form-group col-md-6">
         <label for="registerEmail">Email</label>
-        <input type="email" class="form-control" id="registerEmail" name="EmailId" required>
+        <input type="email" class="form-control" id="registerEmail" name="Email" required>
         <div class="invalid-feedback">
           Please enter a valid e-mail.
         </div>
@@ -46,7 +46,7 @@ Register
     </div>
     <div class="form-group col-md-6">
       <label for="registerPhone">Phone Number</label>
-      <input type="phone" class="form-control" name="Phone" id="registerPhone"  required placeholder="Enter phone number" >
+      <input type="number" class="form-control" name="Phone" id="registerPhone"  required placeholder="Enter phone number" >
       <div class="invalid-feedback">
         Please help us reach to you.
       </div>
@@ -55,21 +55,21 @@ Register
       <div class="form-group col-md-3">
         <label for="inputState">City</label>
         <select id="inputState" class="form-control" required>
-          <option selected disabled value="">Choose a city</option>
-          <option value="">Bangalore</option>
-          <option value="">Bhopal</option>
-          <option value="">Chandigarh</option>
-          <option value="">Chennai</option>
-          <option value="">Delhi</option>
-          <option value="">Dispur</option>
-          <option value="">Hyderabad</option>
-          <option value="">Jaipur</option>
-          <option value="">Kolkata</option>
-          <option value="">Lucknow</option>
-          <option value="">Ludhiana</option>
-          <option value="">Mumbai</option>
-          <option value="">Trichy</option>
-          <option value="">Vadodara</option>
+          <option selected disabled value="Choose">Choose a city</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Bhopal">Bhopal</option>
+          <option value="Chandigarh">Chandigarh</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Dispur">Dispur</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Jaipur">Jaipur</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Lucknow">Lucknow</option>
+          <option value="Ludhiana">Ludhiana</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Trichy">Trichy</option>
+          <option value="Vadodara">Vadodara</option>
         </select>
         <div class="invalid-feedback">
           Please enter your City.
